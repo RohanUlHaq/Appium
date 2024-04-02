@@ -1,5 +1,5 @@
 describe('Sample', () => {
-    it('Sample test', async() => {
+    it('Sample test of login', async() => {
         await browser.pause(7000); // Add a wait here before interacting with elements
         await $('~app_tour_footer_btn_next').click();
         await $('~app_tour_footer_btn_next').click();
