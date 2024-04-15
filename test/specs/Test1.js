@@ -1,19 +1,20 @@
 const { browser } = require('@wdio/globals');
-describe('Sample', () => {
+const login_screenLocators = require('../screenobjects/android/login_screen-locators');
+describe('Sample', async () => {
     // it('Sample test of login', async() => {
     //     await browser.pause(7000); // Add a wait here before interacting with elements
-    //     await $('~app_tour_footer_btn_next').click();
-    //     await $('~app_tour_footer_btn_next').click();
-    //     await $('~app_tour_footer_btn_next').click();
-    //     await $('~app_tour_footer_btn_next').click();
-    //     await $('~Menu').click();
-    //     await $('~menu_btn_login').click();
-    //     await $('//android.view.ViewGroup[@resource-id="login_switcher"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup').click();
-    //     await $('~login_input_email').setValue('anser@yopmail.com')
-    //     await $('~login_btn_next').click();
-    //     await $('~password_input').setValue('click123');
-    //     await $('//android.widget.TextView[@text=""]').click();
-    //     await $('~Next').click();
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.explorebutton.click();
+    // await login_screenLocators.bottom_nav_menu.click();
+    // await login_screenLocators.guestmenu_loginbtn.click();
+    // await login_screenLocators.emailswitcher.click();
+    // await login_screenLocators.login_input.setValue('anser@yopmail.com')
+    // await login_screenLocators.login_nextbtn.click();
+    // await login_screenLocators.password_input.setValue('click123');
+    // await login_screenLocators.unhide_eyebtn.click();
+    // await login_screenLocators.password_nextbtn.click();
     // })
 
 
@@ -74,8 +75,9 @@ describe('Sample', () => {
 
           //Choose your password
           await $('~signup_details_input_password').setValue('click123');
-          await $('(//android.widget.TextView[@text=""])[1]').click();
+        //   await $('(//android.widget.TextView[@text=""])[1]').click();
           await $('~signup_details_input_confirm_password').setValue('click123');
+
         //   await $('(//android.widget.TextView[@text=""])[2]').click();
           await $('~signup_details_btn_next').click();
 
