@@ -1,3 +1,4 @@
+const { browser } = require('@wdio/globals');
 describe('Sample', () => {
     it('Sample test of login', async() => {
         await browser.pause(7000); // Add a wait here before interacting with elements
