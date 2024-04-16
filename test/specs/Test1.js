@@ -19,7 +19,7 @@ describe('Sample', async () => {
     // })
 
 
-    it('', async() => {
+    it('Signup flow', async () => {
         const driver = await // Initialize your Appium driver (replace with your driver initialization code)
 
         await browser.pause(5000); // Add a wait here before interacting with elements
@@ -75,7 +75,7 @@ describe('Sample', async () => {
           await browser.pause(8000);
 
           //Choose your password
-          await signup_screenLocators.passowrd.setValue('click123');
+          await signup_screenLocators.password.setValue('click123');
         //   await $('(//android.widget.TextView[@text=""])[1]').click();
           await signup_screenLocators.confirm_password.setValue('click123');
 
