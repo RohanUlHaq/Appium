@@ -48,3 +48,5 @@ class SignupScreenLocators {
         return $('~welcome_btn_next');
     }
 }
+
+module.exports = new SignupScreenLocators
