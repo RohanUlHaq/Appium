@@ -1,5 +1,6 @@
 const { browser } = require('@wdio/globals');
 const login_screenLocators = require('../screenobjects/android/login_screen-locators');
+const signup_screenLocators = require('../screenobjects/android/signup_screen-locators');
 describe('Sample', async () => {
     // it('Sample test of login', async() => {
     //     await browser.pause(7000); // Add a wait here before interacting with elements
@@ -22,13 +23,13 @@ describe('Sample', async () => {
         const driver = await // Initialize your Appium driver (replace with your driver initialization code)
 
         await browser.pause(5000); // Add a wait here before interacting with elements
-        await $('~app_tour_footer_btn_next').click();
-        await $('~app_tour_footer_btn_next').click();
-        await $('~app_tour_footer_btn_next').click();
-        await $('~app_tour_footer_btn_next').click();
-        await $('~Menu').click();
-        await $('~menu_btn_login').click();
-        await $('//android.view.ViewGroup[@resource-id="login_switcher"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup').click();
+        await signup_screenLocators.nextbutton.click();
+        await signup_screenLocators.nextbutton.click();
+        await signup_screenLocators.nextbutton.click();
+        await signup_screenLocators.explorebutton.click();
+        await signup_screenLocators.bottom_nav_menu.click();
+        await signup_screenLocators.guestmenu_loginbtn.click();
+        await signup_screenLocators.emailswitcher.click();
 
         function generateRandomEmail() {
             const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -53,36 +54,36 @@ describe('Sample', async () => {
           }
         
           // Find email field and enter generated email
-          await $('~login_input_email').setValue(generateRandomEmail());
+          await signup_screenLocators.login_inputemail.setValue(generateRandomEmail());
         
           // Click on Next button
-          await $('~login_btn_next').click();
+          await signup_screenLocators.login_nextbtn.click();
         
           // Wait for manually entering OTP
           await browser.pause(8000);
 
           // Find name field (replace with your actual selector) and enter generated name
-          await $('~signup_details_input_name').setValue(generateRandomName());
-          await $('~signup_details_btn_next').click();
+          await signup_screenLocators.input_name.setValue(generateRandomName());
+          await signup_screenLocators.inputname_nextbtn.click();
 
           // Selecting the gender
-          await $('~signup_details_bottom_sheet_gender').click()
-          await $('(//android.view.ViewGroup[@content-desc="bottom-sheet-option-[object Object]"])[1]').click();
-          await $('~signup_details_btn_next').click();
+          await signup_screenLocators.gender_bottomsheet.click()
+          await signup_screenLocators.male_optionselect.click();
+          await signup_screenLocators.gender_nextbtn.click();
 
           // Wait for manually selecting DOB
           await browser.pause(8000);
 
           //Choose your password
-          await $('~signup_details_input_password').setValue('click123');
+          await signup_screenLocators.passowrd.setValue('click123');
         //   await $('(//android.widget.TextView[@text=""])[1]').click();
-          await $('~signup_details_input_confirm_password').setValue('click123');
+          await signup_screenLocators.confirm_password.setValue('click123');
 
         //   await $('(//android.widget.TextView[@text=""])[2]').click();
-          await $('~signup_details_btn_next').click();
+          await signup_screenLocators.password_nextbtn.click();
 
           //Welcome Screen next button
-          await $('~welcome_btn_next').click();
+          await signup_screenLocators.welcome_nextbtn.click();
         
     })
 })
