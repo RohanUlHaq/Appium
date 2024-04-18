@@ -59,7 +59,7 @@ exports.config = {
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': 'C:/Users/Iomechs/webdio-appium/app/android/[d] 0.0.5.apk'
+        'appium:app': 'C:/Users/Iomechs/Estenarh/app/android/0.0.7.apk'
     }],
 
     //
