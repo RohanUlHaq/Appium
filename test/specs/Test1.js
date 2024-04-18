@@ -86,4 +86,20 @@ describe('Sample', async () => {
           await signup_screenLocators.welcome_nextbtn.click();
         
     })
+
+    // it('Forgot Password', async() => {
+    //     await browser.pause(7000); // Add a wait here before interacting with elements
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.nextbutton.click();
+    // await login_screenLocators.explorebutton.click();
+    // await login_screenLocators.bottom_nav_menu.click();
+    // await login_screenLocators.guestmenu_loginbtn.click();
+    // await login_screenLocators.emailswitcher.click();
+    // await login_screenLocators.login_input.setValue('anser@yopmail.com')
+    // await login_screenLocators.login_nextbtn.click();
+    // await login_screenLocators.password_input.setValue('click123');
+    // await login_screenLocators.unhide_eyebtn.click();
+    // await login_screenLocators.password_nextbtn.click();
+    // })
 })

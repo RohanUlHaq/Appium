@@ -59,7 +59,7 @@ exports.config = {
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': 'C:/Users/Iomechs/Estenarh/app/android/0.0.7.apk'
+        'appium:app': 'C:/Users/Iomechs/Estenarh/app/android/0.0.7 REVAMP.apk'
     }],
 
     //
@@ -148,7 +148,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 70000
     },
 
     //
