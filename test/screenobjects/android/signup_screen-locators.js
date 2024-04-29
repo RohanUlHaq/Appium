@@ -45,7 +45,7 @@ class SignupScreenLocators {
         return $('~signup_details_btn_next');
     }
     get welcome_nextbtn(){
-        return $('~welcome_btn_next');
+        return $('~welcome_btn_start');
     }
 }
 
