@@ -8,11 +8,14 @@ class BookSessionLocators{
     get consultant_card(){
         return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Psychiatrist, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR"]/android.view.ViewGroup');
     }
+    get consultant_card_newuser(){
+        return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Psychiatrist, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR, 351.90 SAR"]/android.view.ViewGroup');
+    }
     get book_sessionbtn(){
         return $('~Book Session');
     }
     get timeslot_opt(){
-        return $('//android.view.ViewGroup[@content-desc=", 6:45pm"]/android.view.ViewGroup');
+        return $('//android.view.ViewGroup[@content-desc=", 7:30pm"]/android.view.ViewGroup');
     }
     get paynow_btn(){
         return $('~Pay Now');

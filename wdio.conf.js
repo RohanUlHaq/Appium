@@ -59,7 +59,8 @@ exports.config = {
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': 'C:\Users\Iomechs\Estenarh V3\es\android\0.0.11.apk'
+        'appium:app': 'C:/Users/Iomechs/Estenarh V3/es/android/0.0.11.apk',
+        'appium:autoGrantPermission' : true
     }],
 
     //

@@ -20,6 +20,18 @@ class SignupScreenLocators {
     get login_nextbtn(){
         return $('~login_btn_next');
     }
+    get otp_1(){
+        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[1]');
+    }
+    get otp_2(){
+        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[2]');
+    }
+    get otp_3(){
+        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[3]');
+    }
+    get otp_4(){
+        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[4]');
+    }
     get input_name(){
         return $('~signup_details_input_name');
     }
