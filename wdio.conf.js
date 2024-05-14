@@ -54,12 +54,12 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Pixel 6',
-        'appium:platformVersion': '14.0',
+        'appium:deviceName': 'Samsung A51',
+        'appium:platformVersion': '13.0',
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': 'C:/Users/Iomechs/Estenarh/app/android/0.0.8.apk'
+        'appium:app': 'C:\Users\Iomechs\Estenarh V3\es\android\0.0.11.apk'
     }],
 
     //
