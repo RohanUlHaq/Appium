@@ -54,8 +54,8 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Samsung A51',
-        'appium:platformVersion': '13.0',
+        'appium:deviceName': 'Samsung S10',
+        'appium:platformVersion': '10.0',
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
