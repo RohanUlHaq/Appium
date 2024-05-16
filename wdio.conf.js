@@ -54,8 +54,8 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Samsung S10',
-        'appium:platformVersion': '10.0',
+        'appium:deviceName': 'Pixel 3a XL',
+        'appium:platformVersion': '12.0',
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
@@ -97,11 +97,11 @@ exports.config = {
     // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 17000, //default:10000
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 150000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -149,7 +149,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 70000
+        timeout: 100000
     },
 
     //

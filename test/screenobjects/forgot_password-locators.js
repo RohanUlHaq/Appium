@@ -1,10 +1,4 @@
 class ForgotPasswordLocators{
-    get nextbutton(){
-        return $('~app_tour_footer_btn_next');
-    }
-    get explorebutton(){
-        return $('~app_tour_footer_btn_next');
-    }
     get bottom_nav_menu(){
         return $('~Menu');
     }
@@ -22,6 +16,24 @@ class ForgotPasswordLocators{
     }
     get forgot_pwdlink(){
         return $('//android.widget.TextView[@text="Forgot Password?"]');
+    }
+    get resetpassword_btn(){
+        return $('~login_btn_next');
+    }
+    get otp(){
+        return $('//android.widget.EditText');
+    }
+    get otp_nextbtn(){
+        return $('~verification_btn_next');
+    }
+    get password(){
+        return $('~reset_password_input_password');
+    }
+    get confirmpassword(){
+        return $('~reset_password_input_confirm_password');
+    }
+    get reset_nextbtn(){
+        return $('~reset_password_btn_next');
     }
 }
 

@@ -20,17 +20,11 @@ class SignupScreenLocators {
     get login_nextbtn(){
         return $('~login_btn_next');
     }
-    get otp_1(){
-        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[1]');
+    get otp(){
+        return $('//android.widget.EditText');
     }
-    get otp_2(){
-        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[2]');
-    }
-    get otp_3(){
-        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[3]');
-    }
-    get otp_4(){
-        return $('(//android.view.ViewGroup[@content-desc="verification_code_cell"])[4]');
+    get otp_nextbtn(){
+        return $('~verification_btn_next');
     }
     get input_name(){
         return $('~signup_details_input_name');
@@ -46,6 +40,18 @@ class SignupScreenLocators {
     }
     get gender_nextbtn(){
         return $('~signup_details_btn_next');
+    }
+    get date_picker(){
+        return $('~signup_details_date_picker_date_of_birth');
+    }
+    get month_datepick(){
+        return $('//android.widget.NumberPicker[1]');
+    }
+    get day_datepick(){
+        return $('//android.widget.NumberPicker[2]');
+    }
+    get year_datepick(){
+        return $('//android.widget.NumberPicker[3]');
     }
     get password(){
         return $('~signup_details_input_password');
