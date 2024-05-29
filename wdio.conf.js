@@ -54,12 +54,12 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Pixel 3a XL',
-        'appium:platformVersion': '12.0',
+        'appium:deviceName': 'Samsung S10',
+        'appium:platformVersion': '10.0',
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': 'C:/Users/Iomechs/Estenarh V3/es/android/0.0.11.apk',
+        'appium:app': 'C:/Users/Iomechs/Estenarh V3/es/android/0.0.13.apk',
         'appium:autoGrantPermission' : true
     }],
 

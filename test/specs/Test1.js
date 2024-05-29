@@ -78,6 +78,17 @@ describe('Sample', async () => {
         
     // })
 
+    it('Login flow', async () => {
+      await browser.pause(4000);
+      await login_screenLocators.bottom_nav_menu.click();
+      await login_screenLocators.guestmenu_loginbtn.click();
+      await login_screenLocators.emailswitcher.click();
+      await login_screenLocators.login_input.setValue('basit@yopmail.com');
+      await login_screenLocators.login_nextbtn.click();
+      await login_screenLocators.password_input.setValue('click123');
+      await login_screenLocators.password_nextbtn.click();
+    })
+
     // it('Signup flow with the exisiting build', async () => {
     //     const driver = await // Initialize your Appium driver (replace with your driver initialization code)
 
@@ -221,21 +232,51 @@ describe('Sample', async () => {
     // await book_sessionLocators.payment_completebtn.click();
     // })
 
-    it('Forgot Password', async() => {
-        await browser.pause(5000);
-        await forgot_passwordLocators.bottom_nav_menu.click();
-        await forgot_passwordLocators.guestmenu_loginbtn.click();
-        await forgot_passwordLocators.emailswitcher.click();
-        await forgot_passwordLocators.login_input.setValue('anser@yopmail.com');
-        await forgot_passwordLocators.login_nextbtn.click();
-        await forgot_passwordLocators.forgot_pwdlink.click();
-        await browser.pause(2000);
-        await forgot_passwordLocators.resetpassword_btn.click();
-        await browser.pause(3000);
-        await forgot_passwordLocators.otp.setValue('1234');
-        await forgot_passwordLocators.otp_nextbtn.click();
-        await forgot_passwordLocators.password.setValue('click12345');
-        await forgot_passwordLocators.confirmpassword.setValue('click12345');
-        await forgot_passwordLocators.reset_nextbtn.click();
-    })
+    // it('Forgot Password', async() => {
+    //     await browser.pause(5000);
+    //     await forgot_passwordLocators.bottom_nav_menu.click();
+    //     await forgot_passwordLocators.guestmenu_loginbtn.click();
+    //     await forgot_passwordLocators.emailswitcher.click();
+    //     await forgot_passwordLocators.login_input.setValue('anser@yopmail.com');
+    //     await forgot_passwordLocators.login_nextbtn.click();
+    //     await forgot_passwordLocators.forgot_pwdlink.click();
+    //     await browser.pause(2000);
+    //     await forgot_passwordLocators.resetpassword_btn.click();
+    //     await browser.pause(3000);
+    //     await forgot_passwordLocators.otp.setValue('1234');
+    //     await forgot_passwordLocators.otp_nextbtn.click();
+    //     await forgot_passwordLocators.password.setValue('click12345');
+    //     await forgot_passwordLocators.confirmpassword.setValue('click12345');
+    //     await forgot_passwordLocators.reset_nextbtn.click();
+    // })
+
+    it('Book Session (tabby)', async() => {
+      await browser.pause(3000); // Add a wait here before interacting with elements
+      await book_sessionLocators.consultant_navbar.click();
+      await book_sessionLocators.searchconsultant.setValue('Ahmed Consultant');
+      await browser.pause(5000);
+      await book_sessionLocators.consultant_card.click();
+      await book_sessionLocators.book_sessionbtn.click();
+      await browser.pause(5000);
+      await book_sessionLocators.timeslot_opt.click();
+      await book_sessionLocators.book_sessionbtn.click();
+      await book_sessionLocators.paynow_btn.click();
+      await browser.pause(5000);
+      await book_sessionLocators.buynow_btn.click();
+      await book_sessionLocators.tabby_bottomsheet.click();
+      await browser.pause(3000);
+      await book_sessionLocators.linknum_tabby.setValue(500000001);
+      await book_sessionLocators.clearemail.clearValue();
+      await book_sessionLocators.testemailtabby.setValue('card.success@tabby.ai');
+      await book_sessionLocators.tabbyloginphone.click();
+      await book_sessionLocators.tabbyloginphone.setValue(500000001);
+      await book_sessionLocators.tabbylogincontinue.click(); //not working idk why :(
+      await browser.pause(3000);
+      await book_sessionLocators.tabbyotp.setValue(8888);
+      await browser.pause(4000);
+      await book_sessionLocators.cardnum.setValue(4111111111111111);
+      await book_sessionLocators.tabbyexpiry.setValue('12/35');
+      await book_sessionLocators.tabbycvv.setValue('123');
+      await book_sessionLocators.paytabbybtn.click();
+      })
 })

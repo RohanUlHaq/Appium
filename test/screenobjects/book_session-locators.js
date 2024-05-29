@@ -6,10 +6,10 @@ class BookSessionLocators{
         return $('~consultant_list_input_search');
     }
     get consultant_card(){
-        return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Psychiatrist, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR"]/android.view.ViewGroup');
+        return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Social Worker, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR"]/android.view.ViewGroup');
     }
     get consultant_card_newuser(){
-        return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Psychiatrist, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR, 351.90 SAR"]/android.view.ViewGroup');
+        return $('//android.view.ViewGroup[@content-desc="Recommended, Ahmed Consultant, Social Worker, 52 Reviews, # Next available at 12:00 PM, 391.00 SAR, 351.90 SAR"]/android.view.ViewGroup');
     }
     get consultant_AR(){
         return $('//android.view.ViewGroup[@content-desc="Recommended, Adil Rasheed, Psychiatrist, 9 Reviews, # Next available at 12:00 PM, 138.00 SAR, 124.20 SAR"]');
@@ -18,7 +18,7 @@ class BookSessionLocators{
         return $('~Book Session');
     }
     get timeslot_opt(){
-        return $('//android.view.ViewGroup[@content-desc=", 5:30pm"]/android.view.ViewGroup');
+        return $('//android.view.ViewGroup[@content-desc=", 8:15pm"]/android.view.ViewGroup');
     }
     get paynow_btn(){
         return $('~Pay Now');
@@ -79,6 +79,42 @@ class BookSessionLocators{
     }
     get logoutbtn(){
         return $('android=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollTextIntoView("Log Out")');
+    }
+    get tabby_bottomsheet(){
+        return $('~Tabby (Pay 189.68 SAR in 4 months), Complete payment with Tabby');
+    }
+    get linknum_tabby(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.widget.EditText');
+    }
+    get clearemail(){
+        return $('//android.widget.EditText[@text="basit@yopmail.com"]');
+    }
+    get testemailtabby(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.widget.EditText');
+    }
+    get tabbyloginphone(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText');
+    }
+    get closekeyboard(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]');
+    }
+    get tabbylogincontinue(){
+        return $('//android.widget.Button[@text="Continue"]');
+    }
+    get tabbyotp(){
+        return $('android.widget.EditText');
+    }
+    get cardnum(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.widget.EditText');
+    }
+    get tabbyexpiry(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.widget.EditText');
+    }
+    get tabbycvv(){
+        return $('//android.webkit.WebView[@text="Tabby Checkout"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[3]/android.view.View[2]/android.widget.EditText');
+    }
+    get paytabbybtn(){
+        return $('//android.widget.Button[@text="Pay 47.42 SAR"]');
     }
 }
 
