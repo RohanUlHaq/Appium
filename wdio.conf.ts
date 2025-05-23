@@ -12,7 +12,7 @@ export const config = {
         'appium:deviceName': 'Pixel',
         'appium:platformVersion': '11.0',
         // Add your app path here:
-        // 'appium:app': './path/to/your/app.apk',
+        'appium:app': './path/to/your/app.apk',
     }],
     logLevel: 'info',
     bail: 0,
