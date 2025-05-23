@@ -9,6 +9,6 @@
     "outDir": "./dist",
     "types": ["node", "mocha", "chai"]
   },
-  "include": ["test/**/*.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
